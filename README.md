@@ -1,6 +1,6 @@
 # LTD's Book Store
 
-**CSE3045 · [Hồ sơ Buổi 9](docs/B9.md) · [Kế hoạch cá nhân 4 tuần](docs/05-schedule.md)**
+**CSE3045 · [Hồ sơ cuối kỳ](docs/README.md) · [Hồ sơ Buổi 9](docs/B9.md) · [Kế hoạch cá nhân 4 tuần](docs/05-schedule.md)**
 
 [![CI — Windows & Ubuntu](https://github.com/s2005on/LTDs-Book-Store/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/s2005on/LTDs-Book-Store/actions/workflows/ci.yml)
 [![Release workflow](https://github.com/s2005on/LTDs-Book-Store/actions/workflows/release.yml/badge.svg)](https://github.com/s2005on/LTDs-Book-Store/actions/workflows/release.yml)

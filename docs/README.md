@@ -4,7 +4,17 @@
 
 Tài liệu kỹ thuật, quản lý dự án, kiểm thử và bàn giao của **LTD's Book Store**. [Quay về README chính](../README.md).
 
-> **Phân biệt phiên bản:** nguồn `main` hiện là **v0.5.1**; ZIP **v1.2.1 Auth Update** được kiểm tra riêng trên máy và **chưa đồng bộ toàn bộ code/ảnh lên GitHub**. Xem [đối chiếu](REPO-SYNC-STATUS.md). Mọi bằng chứng cần gắn với đúng commit.
+## Hồ sơ dự án cá nhân cuối kỳ
+
+Mốc phát triển hiện tại là **v1.3.0 Pro Edition**, đã nhập qua [PR #14](https://github.com/s2005on/LTDs-Book-Store/pull/14). Giao diện còn được chỉnh sửa. Khi chuẩn bị buổi thi, chọn một commit để dùng chung cho báo cáo, bản chạy và demo.
+
+| Yêu cầu CSE3045 | Hồ sơ đang dùng | Phần cần hoàn thiện |
+|---|---|---|
+| Ý tưởng, người dùng, yêu cầu và thiết kế | [Phạm vi và tiêu chí](B9.md) · [Kiến trúc và dữ liệu](03-system-design.md) | Đối chiếu với chức năng thực tế sau các lần sửa UI. |
+| Lập kế hoạch và giải trình từng tuần | [Kế hoạch 4 tuần](05-schedule.md) · [Nhật ký và mốc Git](SPRINT-TRACKER.md) | Ghi ngày thật, chênh lệch so với kế hoạch, lý do thay đổi và kết quả thử. |
+| Sản phẩm, kiểm thử và bàn giao | [Trạng thái bản Pro](FINAL-HANDOVER.md) · [Minh chứng](evidence/README.md) | Lưu kết quả của luồng thành công và một ca lỗi trên bản chọn để demo. |
+| Đóng góp cá nhân và nguồn | [Phần việc và nguồn](TEAM.md) | Xác nhận phần tự làm, phần tái sử dụng, công cụ hỗ trợ và phản hồi thực tế. |
+| Báo cáo và thuyết trình | Báo cáo cá nhân khoảng 20–30 trang theo hướng dẫn học phần, tài liệu trình bày và demo | Soạn sau khi chốt giao diện. Nộp cùng repo và commit hoặc tag theo lịch thi. |
 
 ## 1. Bắt đầu và tổng quan
 
@@ -27,7 +37,7 @@ Tài liệu kỹ thuật, quản lý dự án, kiểm thử và bàn giao của 
 | [05 — Schedule](05-schedule.md) | Mốc tiến độ |
 | [08 — MVP Demo](08-mvp-demo.md) | Kịch bản trình diễn giai đoạn đầu |
 
-## 3. Quản lý đồ án và làm việc nhóm
+## 3. Quản lý dự án cá nhân
 
 | Hồ sơ | Nội dung |
 |---|---|
@@ -58,7 +68,7 @@ Tài liệu kỹ thuật, quản lý dự án, kiểm thử và bàn giao của 
 | [B2 Report](B2-REPORT.md) | Môi trường, kỹ thuật và minh chứng |
 | [Midterm](MIDTERM.md) | Khung báo cáo giữa kỳ |
 | [Sprint 0 Report](SPRINT0-REPORT.md) | Dấu mốc lịch sử ban đầu |
-| [Final Report](FINAL-REPORT.md) | Kết quả, thiết kế, hạn chế |
+| [Final Report](FINAL-REPORT.md) | Bản nháp lịch sử v0.5.1 |
 | [Final Handover](FINAL-HANDOVER.md) | Kiểm tra trước bàn giao |
 | [Verification](../VERIFICATION.md) | Kết quả xác minh và giới hạn |
 | [Release notes v0.2.0](RELEASE-v0.2.0.md) | Hồ sơ mốc cũ, không đại diện cho bản mới |
@@ -71,6 +81,6 @@ Mỗi lần phát triển/kiểm thử một bản:
 2. Kèm Issue/PR liên quan, ảnh giao diện desktop/mobile và kết quả Python/JavaScript.
 3. Chỉ đánh dấu **Đạt** khi tự chạy kiểm thử hoặc có CI của **đúng commit**.
 4. Che thông tin cá nhân, không đưa `.env`, SQLite thật hay token lên GitHub.
-5. Bản ZIP mới được nhập vào nhánh riêng, kiểm tra CI, merge rồi mới tạo GitHub Release.
+5. Khi chốt bản demo, lưu link commit hoặc tag trong hồ sơ bàn giao.
 
-**VPS đang tạm hoãn.** Thư mục `deploy/` chỉ phục vụ tài liệu kỹ thuật trong giai đoạn đồ án.
+Hướng dẫn chạy bản dùng để đối chiếu nằm tại [START-HERE.md](../START-HERE.md).
