@@ -1,6 +1,6 @@
-# Báo cáo tổng kết kỹ thuật — LTD's Book Store
+# Bản nháp lịch sử của báo cáo v0.5.1
 
-**Trạng thái tài liệu:** bản nháp học thuật có đối chiếu mã nguồn, không phải báo cáo đã được giảng viên duyệt. Phiên bản mã GitHub đang được mô tả: `main` **v0.5.1**; ZIP chạy local **v1.2.1 chưa đồng bộ hoàn toàn**.
+Bản nháp này ghi lại giai đoạn v0.5.1. Các nhận xét và việc cần làm bên dưới thuộc mốc đó. Hồ sơ hiện hành của v1.3.0 Pro Edition nằm trong [mục lục cuối kỳ](README.md) và [sổ bàn giao](FINAL-HANDOVER.md). Báo cáo nộp thi sẽ được biên soạn khi chốt phiên bản trình diễn.
 
 ## 1. Giới thiệu và mục tiêu
 Website thương mại điện tử bán sách Toán lớp 6–10, giúp người mua tìm sách theo khối lớp/mục tiêu; chủ cửa hàng đăng nhập và quản lý danh mục, bìa, giá, trạng thái sách.

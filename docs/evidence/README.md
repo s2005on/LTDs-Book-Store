@@ -1,6 +1,6 @@
 # Minh chứng kiểm thử và tiến độ LTD's Book Store
 
-Thư mục này dành riêng cho **minh chứng thật của LTD's Book Store**. Hiện chưa thêm ảnh hoặc log; hãy bổ sung bằng chứng kiểm thử đúng từng lần chạy/phiên bản.
+Mốc ứng dụng đã kiểm tra là [1d5f3e6](https://github.com/s2005on/LTDs-Book-Store/tree/1d5f3e6656c9f7d7f931f476d78f053edf95d91b). [CI trên Windows và Ubuntu](https://github.com/s2005on/LTDs-Book-Store/actions/runs/44733697561) lưu kết quả tự động. [Hồ sơ B9](../B9.md) ghi riêng kết quả chạy trên ZIP. Ảnh và log dùng thử giao diện sẽ bổ sung theo từng commit.
 
 ## Quy tắc tên thư mục
 
@@ -12,7 +12,7 @@ Gợi ý danh sách file trong mỗi thư mục:
 - `03-book-detail.png`, `04-cart.png`: xem chi tiết và giỏ hàng.
 - `05-login.png`, `06-admin-inventory.png`: xác thực và CRUD sách (dữ liệu giả).
 - `07-coming-soon.png`: banner và giá/trạng thái chưa mở bán.
-- `08-order-flow.png`: **chỉ thêm khi backend đơn hàng đã nhập vào GitHub**.
+- `08-order-flow.png`: ghi mã đơn thử và trạng thái đã đối chiếu ở cả hai vai trò.
 - `tests.txt`: lệnh, số lượng test đạt/trượt, commit, hệ điều hành.
 - `ci-url.txt`: link run GitHub Actions của đúng commit.
 

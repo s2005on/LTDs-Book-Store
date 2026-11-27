@@ -1,38 +1,19 @@
-# Bàn giao LTD's Book Store — sổ theo dõi phiên bản
+# Hồ sơ bàn giao LTD's Book Store
 
-## 1. Hồ sơ Sprint 0 (lịch sử)
+## Mốc dùng để phát triển giao diện
 
-Giai đoạn UI Foundation từng bàn giao giao diện danh mục, giỏ demo, mã FastAPI nền, tài liệu WBS/Scrum và CI. Những kết quả đó thuộc **phiên bản/commit của Sprint 0**, không đại diện cho chức năng mới ở `main` và **không phải** kết quả test ZIP local v1.2.1.
-
-## 2. Cơ sở ở GitHub hiện tại
-
-- Repository: https://github.com/s2005on/LTDs-Book-Store
-- `VERSION` trên `main`: **v0.5.1** (cho đến khi PR đồng bộ mới được merge).
-- Nghiệp vụ mã nguồn hiện có: FastAPI/SQLite, đăng nhập/đăng ký, quản trị sách, upload ảnh, trạng thái sách, cửa hàng, giỏ demo.
-- Chưa đồng bộ: order API/quản trị đơn và bộ ảnh gốc chất lượng cao từ ZIP local v1.2.1.
-- Chưa triển khai VPS; không đưa `.env`, SQLite khách, backup hoặc PII vào GitHub.
-
-## 3. Hồ sơ và quy trình đi kèm
-
-| Thành phần | Tài liệu |
+| Nội dung | Đối chiếu |
 |---|---|
-| Phân tích/thiết kế | [ACADEMIC-TRACEABILITY.md](ACADEMIC-TRACEABILITY.md), [03-system-design.md](03-system-design.md) |
-| Sprint/tiến độ | [SPRINT-TRACKER.md](SPRINT-TRACKER.md) |
-| Chất lượng/test | [TEST-PLAN.md](TEST-PLAN.md), [QUALITY.md](QUALITY.md) |
-| Minh chứng | [evidence/README.md](evidence/README.md) |
-| Nhận bản ZIP mới | [VERSION-INTAKE.md](VERSION-INTAKE.md) |
-| Release/rollback | [RELEASE-CHECKLIST.md](RELEASE-CHECKLIST.md), [VERSIONING.md](VERSIONING.md) |
+| Mã nguồn | **v1.3.0 Pro Edition** tại [1d5f3e6](https://github.com/s2005on/LTDs-Book-Store/tree/1d5f3e6656c9f7d7f931f476d78f053edf95d91b), nhập qua [PR #14](https://github.com/s2005on/LTDs-Book-Store/pull/14). |
+| Người mua | Lọc sách, thêm vào giỏ, gửi đơn, xem lại mã và trạng thái trong tài khoản. |
+| Quản trị | Quản lý sách, ảnh, tồn kho và cập nhật trạng thái đơn. |
+| Vận hành | [Chạy trên Windows](../START-HERE.md). Dùng dữ liệu thử khi tạo tài khoản và đơn hàng. |
+| Kiểm chứng | [CI trên Windows và Ubuntu](https://github.com/s2005on/LTDs-Book-Store/actions/runs/44733697561) đã đạt tại mốc trên. Xem [kế hoạch thử](TEST-PLAN.md) và [minh chứng](evidence/README.md). |
+| Trạng thái bàn giao | Đang nâng cấp UI. Commit trình diễn và kết quả nghiệm thu cuối sẽ được ghi sau. |
 
-## 4. Checklist bàn giao mỗi phiên bản
+## Khi chọn bản trình diễn
 
-- [ ] Có ZIP chính thức, SHA-256 và VERSION đúng.
-- [ ] Nhánh PR chứa code, ảnh và test đầy đủ.
-- [ ] CI Windows/Ubuntu đạt **trên đúng SHA**.
-- [ ] Minh chứng UI và API được lưu thực tế theo commit.
-- [ ] Backup dữ liệu local và thử nâng cấp/khôi phục nếu có thay đổi DB.
-- [ ] README, CHANGELOG, tag và GitHub Release nhất quán.
-- [ ] Có ghi rõ các lỗi còn lại và giới hạn; không tuyên bố chạy VPS khi chưa kiểm thử.
-
-## 5. Trạng thái hiện tại và bước tiếp theo
-
-**Chưa coi là bàn giao v1.2.1 trên GitHub** vì mã ZIP chưa nhập vào `main`. Theo dõi [Issue #3](https://github.com/s2005on/LTDs-Book-Store/issues/10). Khi người dùng gửi bản mới, đối chiếu theo [VERSION-INTAKE.md](VERSION-INTAKE.md), PR → CI → merge → release, rồi mới cập nhật kết luận hồ sơ này.
+1. Ghi commit, ngày thử, môi trường và cách chạy lại từ bản tải sạch.
+2. Với tài khoản khách, đặt sách còn hàng, ghi mã, tải lại và đối chiếu số lượng, tổng tiền. Với tài khoản quản trị, xác nhận đơn rồi kiểm tra trạng thái phía khách.
+3. Thử một điều kiện bị từ chối, chẳng hạn đặt số lượng vượt tồn kho. Ghi phản hồi quan sát được và kiểm tra không phát sinh đơn mới.
+4. Lưu kết quả đạt, chưa đạt hoặc chưa thử, cùng lỗi còn mở và ảnh hoặc log đã bỏ thông tin riêng tư. Dùng cùng commit trong báo cáo và demo ngày thi.

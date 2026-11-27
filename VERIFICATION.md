@@ -1,6 +1,10 @@
 # Verification — LTD's Book Store
 
-## Trạng thái hiện tại — 18/11/2026
+## Kết quả của v1.3.0 Pro Edition
+
+[CI trên Windows và Ubuntu](https://github.com/s2005on/LTDs-Book-Store/actions/runs/44733697561) đã đạt trên commit [1d5f3e6](https://github.com/s2005on/LTDs-Book-Store/tree/1d5f3e6656c9f7d7f931f476d78f053edf95d91b). [Hồ sơ bàn giao hiện hành](docs/FINAL-HANDOVER.md) liệt kê phạm vi và các ca cần thử lại khi giao diện thay đổi.
+
+## Lịch sử ngày 18/11/2026
 
 Repository `main` vẫn ở **v0.5.1**. Bản ZIP local mới nhất là **v1.2.1 Auth Update** (đã kiểm tra VERSION=1.2.1, cấu trúc trang đăng nhập/đăng ký và tính toàn vẹn ZIP); các chức năng chưa được đồng bộ hay chạy CI trên GitHub. Xem [biên bản](docs/RELEASE-INTAKE-v1.2.1.md) và [trạng thái đồng bộ](docs/REPO-SYNC-STATUS.md). **Chưa coi ZIP v1.2.1 là GitHub Release.**
 
